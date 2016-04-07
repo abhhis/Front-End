@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Test Page</title>
+    <meta charset="UTF-8">
+    <title>Test Page</title>
+    <link rel="stylesheet" type="text/css" href="css\normalize.css">
+    <link rel="stylesheet" type="text/css" href="css\test.css">
 </head>
+
 <body>
-	<p id="val1"></p>
-	<p id="val2"></p>
-	<p id="val3"></p>
-	<p id="val4"></p>
+    <div id="wrapper">
+        <div id="screen">
+            <input type="text" id="ipscr" align="right"></input>
+        </div>
+        <div id="keypad">
+            <div>
+                <button type="button" class="btn btn-primary"onclick="f()" id="0">0</button>
+                <button type="button" class="btn btn-primary"onclick="f()" id="1">1</button>
+                <button type="button" class="btn btn-primary"onclick="f()" id="2">2</button>
+                <button type="button" class="btn btn-primary"onclick="f()" id="3">3</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary"onclick="f()" id="4">4</button>
+                <button type="button" class="btn btn-primary"onclick="f()" id="5">5</button>
+                <button type="button" class="btn btn-primary"onclick="f()" id="6">6</button>
+                <button type="button" class="btn btn-primary"onclick="f()" id="7">7</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary"onclick="f()" id="8">8</button>
+                <button type="button" class="btn btn-primary"onclick="f()" id="9">9</button>
+                <button type="button" class="btn btn-primary"onclick="f()" id="+">+</button>
+                <button type="button" class="btn btn-primary"onclick="f()" id="-">-</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary"onclick="f()" id="/">/</button>
+                <button type="button" class="btn btn-primary"onclick="f()" id="*">*</button>
+                <button type="button" class="btn btn-primary"onclick="f()" id="=">=</button>
+                <button type="button" class="btn btn-primary"onclick="f()" id="ce">C</button>
+            </div>
+        </div>
+    </div>
 </body>
-<script type="text/javascript" src="./js/abJsTestCase1.js"></script>
+<!--
+<script type="text/javascript" src="./js/abJsTestCase1.js">
+</script>-->
+
 </html>
