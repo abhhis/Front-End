@@ -1,6 +1,6 @@
 /*dynamically loading img on html*/
 /*document.write("<img src='./img/1.png'>");
-*/
+ */
 /*Loading multi imgaes using arraay*/
 /*
 var pic=["1.png","2.png","3.png","4.png","5.png"];
@@ -18,8 +18,15 @@ document.write('<img src="img/'+i+'">');
 }
 pic.forEach(f);
 */
-var pic=["1.png","2.png","3.png","4.png","5.png"];
-myfunction f(i){
-	document.write('<img src="img/'+i+'">');
+/*click button */
+/*
+var pic = ["1.png", "2.png", "3.png", "4.png", "5.png"];
+document.querySelector("#btn").addEventListener("click", MyFunc);
+
+function MyFunc() {
+    function f(i) {
+        document.write('<img src="img/' +i+'">');
+    }
+    pic.forEach(f);
 }
-pic.forEach(f);
+*/
