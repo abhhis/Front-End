@@ -1,32 +1,8 @@
-/*dynamically loading img on html*/
-/*document.write("<img src='./img/1.png'>");
- */
-/*Loading multi imgaes using arraay*/
-/*
-var pic=["1.png","2.png","3.png","4.png","5.png"];
-
-for(i=1;i<=5;i++)
-{
-	document.write("<img src='img/"+pic[i]+"'>");
-};
-*/
-/*using for each loop dload*/
-/*
-var pic=["1.png","2.png","3.png","4.png","5.png"];
-function f(i) {
-document.write('<img src="img/'+i+'">');
+/*Wap to Input two string and concatinate the string*/
+function f() {
+var x=document.getElementById("str1").value;
+var y=document.getElementById("str2").value;
+var z= x + y;
+ document.getElementById("para").innerHTML=z;
 }
-pic.forEach(f);
-*/
-/*click button */
-/*
-var pic = ["1.png", "2.png", "3.png", "4.png", "5.png"];
-document.querySelector("#btn").addEventListener("click", MyFunc);
-
-function MyFunc() {
-    function f(i) {
-        document.write('<img src="img/' +i+'">');
-    }
-    pic.forEach(f);
-}
-*/
+document.querySelector("button").addEventListener("click", f);
